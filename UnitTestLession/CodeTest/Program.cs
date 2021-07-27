@@ -30,16 +30,21 @@ namespace CodeTest
         public static string Greeting(int number)
         {
             string greeting;
+
             if (number >= 5 && number <= 12)
-            {
                 greeting = "Good Morning";
-            }
-            else if (number >= 12 && number <= 18)
-            {
+
+            else if (number > 12 && number <= 18)
                 greeting = "Good Afternoon";
-            }
-            else
+
+            else if (number > 18 && number <= 24)
                 greeting = "Good Evening";
+
+            else if (number < 5)
+                greeting = "Go to bed!";
+
+            else
+                greeting = "Error.";
 
             return greeting;
         }
