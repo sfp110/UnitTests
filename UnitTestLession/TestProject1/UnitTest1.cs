@@ -10,56 +10,79 @@ namespace TestProject1
         public void Setup()
         {
         }
+        [TestCase(3)]
+        [TestCase(12)]
+        [TestCase(16)]
+        [TestCase(21)]    
+        [TestCase(25)]
 
         // Test Case #1: Expected Greeting to match the time provided : Verification
-        [Test]
-        public void GivenATimeOf3_Greeting_RetunrsGoToBed()
+        public void GivenATimeOf3_Greeting_RetunrsGoToBed(int time)
         {
-            var time = 3;
+            //Arrange
             var expectedGreeting = "Go to bed!";
 
+            //Act
             var result = Program.Greeting(time);
 
+            //Assert
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
-        [Test]
+
+        //[Test]
+        [TestCase(3)]
+        [TestCase(12)]
+        [TestCase(16)]
+        [TestCase(21)]
+        [TestCase(25)]
         // Test Case #2: Expected Greeting to match the time provided : Verification
-        public void GivenATimeOf12_Greeting_RetunrsGoodMorning()
+        public void GivenATimeOf12_Greeting_RetunrsGoodMorning(int time)
         {
-            var time = 12;
             var expectedGreeting = "Good Morning";
 
             var result = Program.Greeting(time);
 
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
-        [Test]
+        //[Test]
+        [TestCase(3)]
+        [TestCase(12)]
+        [TestCase(16)]
+        [TestCase(21)]
+        [TestCase(25)]
         // Test Case #3: Expected Greeting to match the time provided : Verification
-        public void GivenATimeOf16_Greeting_RetunrsGoodAfternoon()
+        public void GivenATimeOf16_Greeting_RetunrsGoodAfternoon(int time)
         {
-            var time = 16;
             var expectedGreeting = "Good Afternoon";
 
             var result = Program.Greeting(time);
 
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
-        [Test]
+        //[Test]
+        [TestCase(3)]
+        [TestCase(12)]
+        [TestCase(16)]
+        [TestCase(21)]
+        [TestCase(25)]
         // Test Case #4: Expected Greeting to match the time provided : Verification
-        public void GivenATimeOf21_Greeting_RetunrsGoodEvening()
+        public void GivenATimeOf21_Greeting_RetunrsGoodEvening(int time)
         {
-            var time = 21;
             var expectedGreeting = "Good Evening";
 
             var result = Program.Greeting(time);
 
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
-        [Test]
+        //[Test]
+        [TestCase(3)]
+        [TestCase(12)]
+        [TestCase(16)]
+        [TestCase(21)]
+        [TestCase(25)]
         // Test Case #5: Expected Greeting to match the time provided : Verification
-        public void GivenATimeOf25_Greeting_RetunrsError()
+        public void GivenATimeOf25_Greeting_RetunrsError(int time)
         {
-            var time = 25;
             var expectedGreeting = "Error.";
 
             var result = Program.Greeting(time);
