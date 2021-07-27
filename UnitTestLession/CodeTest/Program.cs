@@ -2,7 +2,7 @@
 
 namespace CodeTest
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -16,7 +16,7 @@ namespace CodeTest
 
                 if (Int32.TryParse(input, out number))
                 {
-                    Console.WriteLine(DoTheTime(number));
+                    Console.WriteLine(Greeting(number));
                     menuNumber+=1;
 
                 }
@@ -27,7 +27,7 @@ namespace CodeTest
             
         }
 
-        private static string DoTheTime(int number)
+        public static string Greeting(int number)
         {
             string greeting;
             if (number >= 5 && number <= 12)
