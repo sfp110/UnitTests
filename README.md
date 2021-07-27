@@ -2,5 +2,8 @@
 
 #### Just exploring Typora
 
-![Hello_World_Movie_(Wordmark)_Logo](https://upload.wikimedia.org/wikipedia/commons/0/01/Hello_World_Movie_%28Wordmark%29_Logo.png)
+![hello-world-510x219](C:\Users\iFran\Documents\UnitTests\hello-world-510x219.png)
 
+> It's quite fun :p
+>
+> > It really is.
