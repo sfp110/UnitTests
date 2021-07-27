@@ -38,7 +38,7 @@ namespace TestProject1
         // Test Case #2: Expected Greeting to match the time provided : Verification
         public void GivenATimeOf12_Greeting_RetunrsGoodMorning(int time)
         {
-            var expectedGreeting = "Good Morning";
+            var expectedGreeting = "Good Afternoon";
 
             var result = Program.Greeting(time);
 
