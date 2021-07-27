@@ -68,11 +68,7 @@ namespace TestProject1
         // Test Case #4: Expected Greeting to match the time provided : Verification
         public void GivenATimeOf21_Greeting_RetunrsGoodEvening(int time)
         {
-            var expectedGreeting = "Good Evening";
-
-            var result = Program.Greeting(time);
-
-            Assert.That(result, Is.EqualTo(expectedGreeting));
+            Assert.That(Program.Greeting(time), Is.EqualTo("Good Evening"));
         }
         //[Test]
         [TestCase(3)]
