@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using CodeTest;
+using NUnit.Framework.Internal;
 
 namespace TestProject1
 {
@@ -10,6 +11,7 @@ namespace TestProject1
         {
         }
 
+        // Test Case #1: Expected Greeting to match the time provided : Verification
         [Test]
         public void GivenATimeOf3_Greeting_RetunrsGoodEvening()
         {
@@ -21,6 +23,7 @@ namespace TestProject1
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
         [Test]
+        // Test Case #2: Expected Greeting to match the time provided : Verification
         public void GivenATimeOf12_Greeting_RetunrsGoodEvening()
         {
             var time = 12;
@@ -31,6 +34,7 @@ namespace TestProject1
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
         [Test]
+        // Test Case #3: Expected Greeting to match the time provided : Verification
         public void GivenATimeOf16_Greeting_RetunrsGoodEvening()
         {
             var time = 16;
@@ -41,6 +45,7 @@ namespace TestProject1
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
         [Test]
+        // Test Case #4: Expected Greeting to match the time provided : Verification
         public void GivenATimeOf21_Greeting_RetunrsGoodEvening()
         {
             var time = 21;
@@ -51,6 +56,7 @@ namespace TestProject1
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
         [Test]
+        // Test Case #5: Expected Greeting to match the time provided : Verification
         public void GivenATimeOf25_Greeting_RetunrsGoodEvening()
         {
             var time = 25;
